@@ -4,15 +4,15 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 91
-    length: 6
+  - offset: 133
+    length: 95
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 91
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       val email = client?.personalInfo?.email
           if (email != null && message != null) {
@@ -88,5 +88,8 @@ files:
         }
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Mon, 09 Aug 2021 02:26:13 UTC
 record: -1

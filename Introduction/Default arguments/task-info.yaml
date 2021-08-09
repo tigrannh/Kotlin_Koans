@@ -12,7 +12,7 @@ files:
       offset: 0
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: 'fun foo(name: String, number: Int = 42, toUpperCase:
       Boolean = false)'
   text: |
@@ -41,10 +41,8 @@ files:
         }
     }
   learner_created: false
-status: Unchecked
+status: Solved
 feedback:
-  message: |-
-    Failed to launch checking. <a href="reload_gradle">Reload Gradle project</a>
-    For more information, see <a href="https://www.jetbrains.com/help/education/troubleshooting-guide.html#no_tests_have_run">the Troubleshooting guide</a>
-  time: Sun, 08 Aug 2021 21:48:25 UTC
+  message: Congratulations!
+  time: Sun, 08 Aug 2021 22:34:25 UTC
 record: -1
