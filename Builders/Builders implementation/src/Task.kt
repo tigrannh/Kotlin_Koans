@@ -13,13 +13,17 @@ fun table(init: TABLE.() -> Unit): TABLE {
 
 class TABLE : Tag("table") {
     fun tr(init: TR.() -> Unit) {
-        /* TODO */
+        val trr = TR()
+        trr.init()
+        children.add(trr)
     }
 }
 
 class TR : Tag("tr") {
     fun td(init: TD.() -> Unit) {
-        /* TODO */
+        val temp = TD()
+        temp.init()
+        children.add(temp)
     }
 }
 

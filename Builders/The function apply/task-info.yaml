@@ -5,14 +5,14 @@ files:
   visible: true
   placeholders:
   - offset: 44
-    length: 6
+    length: 24
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 44
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       f()
           return this
@@ -68,5 +68,8 @@ files:
         }
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sun, 15 Aug 2021 20:48:23 UTC
 record: -1
