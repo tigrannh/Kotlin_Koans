@@ -5,24 +5,24 @@ files:
   visible: true
   placeholders:
   - offset: 122
-    length: 6
+    length: 34
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 122
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: customers.maxBy { it.orders.size }
-  - offset: 281
-    length: 6
+  - offset: 309
+    length: 64
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 281
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       customer.orders
                       .flatMap(Order::products)
@@ -146,5 +146,8 @@ files:
             Tokyo to listOf(asuka)
     ).mapValues { it.value.map { name -> customers[name] } }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sun, 22 Aug 2021 22:18:42 UTC
 record: -1

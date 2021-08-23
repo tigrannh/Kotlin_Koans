@@ -5,14 +5,14 @@ files:
   visible: true
   placeholders:
   - offset: 134
-    length: 6
+    length: 155
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 134
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       customers.filter {
           val (delivered, undelivered) = it.orders.partition { it.isDelivered }
@@ -126,5 +126,17 @@ files:
             Tokyo to listOf(asuka)
     ).mapValues { it.value.map { name -> customers[name] } }
   learner_created: false
-status: Unchecked
+- name: hs_err_pid8740.log
+  visible: true
+  learner_created: true
+- name: hs_err_pid13976.log
+  visible: true
+  learner_created: true
+- name: hs_err_pid11752.log
+  visible: true
+  learner_created: true
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sun, 22 Aug 2021 23:22:40 UTC
 record: -1

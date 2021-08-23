@@ -5,14 +5,14 @@ files:
   visible: true
   placeholders:
   - offset: 133
-    length: 6
+    length: 29
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 133
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: customers.groupBy { it.city }
   text: |
     // Build a map that stores the customers living in a given city
@@ -123,5 +123,29 @@ files:
             Tokyo to listOf(asuka)
     ).mapValues { it.value.map { name -> customers[name] } }
   learner_created: false
-status: Unchecked
+- name: hs_err_pid11496.log
+  visible: true
+  learner_created: true
+- name: hs_err_pid11268.log
+  visible: true
+  learner_created: true
+- name: hs_err_pid4808.log
+  visible: true
+  learner_created: true
+- name: hs_err_pid6280.log
+  visible: true
+  learner_created: true
+- name: hs_err_pid5888.log
+  visible: true
+  learner_created: true
+- name: hs_err_pid11540.log
+  visible: true
+  learner_created: true
+- name: hs_err_pid8116.log
+  visible: true
+  learner_created: true
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sun, 22 Aug 2021 22:53:55 UTC
 record: -1

@@ -5,14 +5,14 @@ files:
   visible: true
   placeholders:
   - offset: 132
-    length: 6
+    length: 70
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 132
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: customer.orders.flatMap { it.products }.sumByDouble
       { it.price }
   text: |
@@ -130,5 +130,14 @@ files:
             Tokyo to listOf(asuka)
     ).mapValues { it.value.map { name -> customers[name] } }
   learner_created: false
-status: Unchecked
+- name: replay_pid6780.log
+  visible: true
+  learner_created: true
+- name: hs_err_pid6780.log
+  visible: true
+  learner_created: true
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sun, 22 Aug 2021 22:19:30 UTC
 record: -1
